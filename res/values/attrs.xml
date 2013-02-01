@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DieSelectorView">
+        <attr name="isAttacker" format="boolean"/>
+        <attr name="dieInitialValue" format="integer"/>
+    </declare-styleable>
+</resources>

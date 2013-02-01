@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.bam.riskroll"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".DiceRollActivity" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.bam.riskroll.view.DieSelectorView
+            android:id="@+id/dieAttacker1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:dieInitialValue="1"
+            app:isAttacker="true" />
+
+        <com.bam.riskroll.view.DieSelectorView
+            android:id="@+id/dieAttacker2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:dieInitialValue="2"
+            app:isAttacker="true" />
+
+        <com.bam.riskroll.view.DieSelectorView
+            android:id="@+id/dieAttacker3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:dieInitialValue="3"
+            app:isAttacker="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.bam.riskroll.view.DieSelectorView
+            android:id="@+id/dieDefender1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:dieInitialValue="4"
+            app:isAttacker="false" />
+
+        <com.bam.riskroll.view.DieSelectorView
+            android:id="@+id/dieDefender2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            app:dieInitialValue="5"
+            app:isAttacker="false" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRollButtonClicked"
+        android:text="Roll!" />
+
+</LinearLayout>
