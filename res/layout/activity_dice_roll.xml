@@ -15,27 +15,18 @@
 
         <com.bam.riskroll.view.DieSelectorView
             android:id="@+id/dieAttacker1"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            app:dieInitialValue="1"
-            app:isAttacker="true" />
+            style="@style/RiskRollTheme.Die.Attacker"
+            app:dieInitialValue="1" />
 
         <com.bam.riskroll.view.DieSelectorView
             android:id="@+id/dieAttacker2"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            app:dieInitialValue="2"
-            app:isAttacker="true" />
+            style="@style/RiskRollTheme.Die.Attacker"
+            app:dieInitialValue="2" />
 
         <com.bam.riskroll.view.DieSelectorView
             android:id="@+id/dieAttacker3"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            app:dieInitialValue="3"
-            app:isAttacker="true" />
+            style="@style/RiskRollTheme.Die.Attacker"
+            app:dieInitialValue="3" />
     </LinearLayout>
 
     <LinearLayout
@@ -47,19 +38,13 @@
 
         <com.bam.riskroll.view.DieSelectorView
             android:id="@+id/dieDefender1"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            app:dieInitialValue="4"
-            app:isAttacker="false" />
+            style="@style/RiskRollTheme.Die.Defender"
+            app:dieInitialValue="4" />
 
         <com.bam.riskroll.view.DieSelectorView
+            style="@style/RiskRollTheme.Die.Defender"
             android:id="@+id/dieDefender2"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
-            android:layout_margin="10dp"
-            app:dieInitialValue="5"
-            app:isAttacker="false" />
+            app:dieInitialValue="5" />
     </LinearLayout>
 
     <Button
